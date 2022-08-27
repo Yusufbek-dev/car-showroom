@@ -1,0 +1,90 @@
+@use "../globals/mixin" as *;
+@use "../globals/colors" as *;
+
+.catalog  {
+  margin-top: 80px;
+}
+.cars-list {
+  overflow:auto;
+  display: flex;
+  justify-content:space-between;
+  &__item {
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 0px 0px 5px 5px;
+    padding-left: 0!important;
+    width: 31%;
+    &-btn {
+      background-color:$primary-color;
+      color: #fff;
+      font-size: 1.071rem;
+      font-weight: 500;
+      padding: 23px 50px;
+      width: 100%;
+      border: 1px solid $primary-color;
+      transition: .3s;
+      &:hover {
+        background-color: transparent;
+        color: $primary-color;
+      }
+      &:active {
+        background-color: #F5F5F9;
+        color: $text-color;
+      }
+    }
+    .uk-panel {
+      .car-btn1, .car-btn2 {
+        width: 148px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 10px;
+        background: rgba(252, 236, 79, 0.77);
+        border-radius: 5px;
+        font-size: .7rem;
+        font-weight: 500;
+      }
+      .car-btn2 {
+        top: 60px;
+      }
+      .coming {
+        width: 148px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 10px;
+        background-color: $primary-color;
+        color:#fff;
+        border-radius: 5px;
+        font-size: .7rem;
+        font-weight: 500;
+      }
+    }
+    @include mobile {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &__texts {
+    padding: 15px 36px 20px 20px;
+    h4 {
+      font-weight: 900;
+    }
+    p {
+      margin-bottom:13px;
+      font-size: .91rem;
+      display: flex;
+      justify-content:space-between;
+      span {
+        font-weight: 700;
+      }
+    }
+    .run {
+      font-size: 1rem;
+      color: $primary-color;
+      margin-bottom:16px;
+    }
+  }
+}

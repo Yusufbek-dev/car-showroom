@@ -1,3 +1,107 @@
 @use "../globals/mixin" as *;
 @use "../globals/colors" as *;
+.hero {
+  padding: 100px 0;
+  background: url(/images/hero-car.png)no-repeat  580px 40px,url(/images/hero-bg.png)
+  no-repeat 110% -900%;
+  &__title {
+    font-weight: 900;
+    width: 55%;
+    span {
+      color: $primary-color;
+    }
+  }
+  &__subtitle {
+    margin-top: 19px;
+    color:#989898;
+    margin-bottom: 72px;
+  }
+  &__btn {
+    padding: 21px 46px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: $primary-color;
+    border-radius: 15px;
+    transition: .3s;
+    &:hover {
+      opacity: .8;
+    }
+  }
+  &__banner {
+    margin-top: 100px;
+    &-title {
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+    &-subtitle {
+      line-height: 25px;
+      width: 60%;
+      margin-bottom: 35px;
+    }
+    &-list {
+      display: flex;
+      column-gap: 22px;
+      &>div {
+        width: 386px;
+        padding: 38px 30px 42px 30px;
+        border: 1px solid #E5E5E5;
+        text-align: center;
+        &:nth-child(2) {
+          background-color: $primary-color;
+          p,h4 {
+            color: #fff;
+          }
+        }
+        p {
+          padding: 10px 0px;
+          width: 85%;
+          margin: 0 auto;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  @include tablet {
+    background: url(/images/hero-car.png)no-repeat  180px 40px;
+    background-size: 950px;
+    &__title {
+      width: 80%;
+    }
+    &__banner {
+      margin-top: 150px;
+      &-title {
+        text-align: center;
+      }
+      &-subtitle {
+        width: 100%;
+        text-align: center;
+      }
+      &-list {
+        flex-direction: column;
+        row-gap: 20px;
+        &>div {
+          width: 100%;
+        }
+      }
+    }
+  }
+  @include mobile {
+    padding: 50px 0;
+    background: url(/images/hero-car.png)no-repeat  -80px 200px;
+    background-size: 650px;
+    &__title {
+      width: 100%;
+    }
+    &__btn {
+      margin-top: 280px;
+      width: 100%;
+      padding: 18px 28px;
+      font-size: .8rem;
+    }
+    &__banner {
+      margin-top: 80px;
+    }
 
+  }
+}

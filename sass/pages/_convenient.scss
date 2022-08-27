@@ -1,0 +1,115 @@
+@use "../globals/colors" as *;
+@use "../globals/mixin" as *;
+
+.convenient {
+  padding: 80px 0;
+  &__title {
+    font-weight: 900;
+    width: 50%;
+    span {
+      color:$primary-color;
+    }
+  }
+  &__box {
+    margin-top: 45px;
+    display: flex;
+    justify-content:space-between;
+    column-gap: 20px;
+    padding: 15px 63px;
+    background-color: #F5F5F9;
+    border: 1px solid $primary-color;
+    border-radius: 5px;
+    p {
+      position: relative;
+      &::before {
+        content: "";
+        background: url(/images/icons/checked-icon.png) no-repeat;
+        width: 25px;
+        left: -30px;
+        height: 25px;
+        position:absolute;
+      }
+      span {
+        color: $primary-color;
+      }
+    } 
+  }
+  &__list {
+    margin-top: 59px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    &-item {
+      width: 32%;
+      padding: 10px;
+      position: relative;
+      &::before {
+        content: "";
+        left: -45px;
+        width: 45px;
+        height: 40px;
+        position:absolute;
+      }
+      &:nth-child(1) {
+        &::before {
+          background: url(/images/icons/convinien1.png) no-repeat;
+        }
+      }
+      &:nth-child(2) {
+        &::before {
+          background: url(/images/icons/convinien2.png) no-repeat;
+        }
+      }
+      &:nth-child(3) {
+        &::before {
+          background: url(/images/icons/convinien3.png) no-repeat;
+        }
+      }
+      &:nth-child(4) {
+        &::before {
+          background: url(/images/icons/convinien4.png) no-repeat;
+        }
+      }
+      &:nth-child(5) {
+        &::before {
+          background: url(/images/icons/convinien5.png) no-repeat;
+        }
+      }
+      &:nth-child(6) {
+       &::before {
+        background: url(/images/icons/convinien6.png) no-repeat;
+       }
+      }
+      p {
+        &:first-child {
+          font-weight: 900;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  @include mobile {
+    padding: 40px 0;
+    &__title  {
+      text-align: center;
+      margin: 0 auto;
+      width: 70%;
+    }
+    &__box {
+      flex-direction: column;
+      width: 100%;
+      margin: 35px auto 0;
+      row-gap: 25px;
+    }
+    &__list {
+      margin-top: 30px;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      &-item {
+        width: 100%;
+      }
+    }
+  }
+}

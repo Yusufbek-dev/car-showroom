@@ -1,0 +1,103 @@
+@use "../globals/colors" as *;
+@use "../globals/mixin" as *;
+
+.steps {
+  padding: 75px 0;
+  background-color: #F5F5F9;
+  &__title {
+    margin-bottom: 15px;
+    font-weight: 900;
+    span {
+      color: $primary-color;
+    }
+  }
+  &__subtitle {
+    font-weight: 500;
+    margin-bottom: 42px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    &-item {
+      width: 24%;
+      h4 {
+        margin-left: 30px;
+        margin-bottom: 25px;
+        font-weight: 900;
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "1.";
+          left: -29px;
+          top: -20px;
+          padding-top: 20px;
+          padding-left: 10px;
+          display: inline-block;
+          width: 58px;
+          height: 58px;
+          background: rgba(0, 136, 207, 0.15);
+          border-radius: 3px;
+        }
+      }
+      .step1 {
+        &::before {
+          content: "1.";
+        }
+      }
+      .step2 {
+        &::before {
+          content: "2.";
+        }
+      }
+      .step3 {
+        &::before {
+          content: "3.";
+        }
+      }
+      .step4 {
+        &::before {
+          content: "4.";
+        }
+      }
+      p {
+        line-height: 27px;
+        span {
+          font-size: 1.4rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  &__btn {
+    @include btn;
+    margin-top: 30px;
+  }
+  @include tablet {
+    &__list {
+      flex-wrap: wrap;
+      row-gap: 20px;
+      &-item {
+        width: 45%;
+      }
+    }
+  }
+  @include mobile {
+    &__title {
+      text-align: center;
+    }
+    &__subtitle {
+      text-align: center;
+    }
+    &__list {
+      flex-wrap: wrap;
+      row-gap: 20px;
+      &-item {
+        width: 95%;
+      }
+    }
+    &__btn {
+      width: 100%;
+    }
+  }
+}

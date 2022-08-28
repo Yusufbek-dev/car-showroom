@@ -3,9 +3,33 @@
 
 .catalog  {
   margin-top: 80px;
+  padding-bottom: 100px;
+  @include mobile {
+    margin-top: 35px;
+    padding-bottom: 45px;
+  }
+}
+.catalog-top {
+  @include adjust;
+  margin-bottom: 48px;
+  &__title {
+    font-weight: 900;
+  }
+  &__btn {
+    @include btn;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  @include tablet {
+    flex-direction: column;
+    row-gap: 30px;
+    &__title {
+      text-align: center;
+    }
+  }
 }
 .cars-list {
-  overflow:auto;
+  overflow-x:unset;
   display: flex;
   justify-content:space-between;
   &__item {
@@ -60,8 +84,16 @@
         font-weight: 500;
       }
     }
+    @include tablet {
+      width: 49%;
+      margin-right: 25px;
+      img {
+        width: 100%;
+      }
+    }
     @include mobile {
       width: 100%;
+      margin-right: 25px;
       img {
         width: 100%;
       }

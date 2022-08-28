@@ -1,0 +1,97 @@
+@use "../globals/colors" as *;
+@use "../globals/mixin" as *;
+.contact {
+  padding: 55px 0;
+  background-color: #F5F5F9;
+  &>div {
+    display: flex;
+    justify-content:space-around;
+  }
+  &__left {
+    &-title {
+      font-weight: 900;
+      margin-bottom: 30px;
+      span {
+        color: $primary-color;
+      }
+    }
+    &-dsc {
+      margin-bottom: 11px;
+      font-weight: 400;
+      line-height: 28px;
+      width: 400px;
+      margin-bottom: 30px;
+      span {
+        font-weight: 700;
+      }
+    }
+    a {
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: $primary-color;
+      transition: .3s;
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+  &__right {
+    width: 520px;
+    input:not(input[type=checkbox]){
+      width: 100%;
+      background: rgba(255, 255, 255, 0.62);
+      border: 1px solid #E5E5E5;
+      border-radius: 5px;
+      padding: 16px 28px;
+      margin-bottom: 29px;
+    }
+    div {
+      display: flex;
+      justify-content:space-between;
+      .contact-btn {
+        @include btn;
+        width: 300px;
+      }
+    }
+  }
+  @include tablet {
+    padding: 45px 0;
+    &>div {
+      flex-direction: column;
+      row-gap: 40px;
+    }
+    &__left {
+      &-title {
+        text-align: center;
+      }
+      &-dsc {
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+      }
+      a {
+        display: block;
+        width: 200px;
+        margin: 20px auto 0;
+      }
+    }
+    &__right {
+      width: 80%;
+      margin: 0 auto;
+    }
+    @include mobile {
+      &__right {
+        form {
+          div {
+            flex-direction: column;
+            row-gap: 20px;
+            align-items: center;
+            .contact-btn {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

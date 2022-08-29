@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <script
+      src="https://kit.fontawesome.com/cb3b11f165.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- uikit links -->
+    <link rel="stylesheet" href="../css/uikit.min.css" />
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div uk-alert class="alert">
+        <button class="uk-alert-close" type="button" uk-close></button>
+        <p>
+          Спецпредложение: купи авто по цене и получи дубликаты госномеров в
+          подарок!
+        </p>
+      </div>
+      <div class="head container">
+        <div class="head__top">
+          <div class="head__top-logo">
+            <img src="/images/logo.png" alt="logo" />
+            <div>
+              <h4>
+                Аренда автомобилей <br />
+                с выкупом №1 на Юге России
+              </h4>
+              <span>Выгодные и честные условия </span>
+            </div>
+          </div>
+          <div class="head__top-location">
+            <img src="/images/icons/location.png" alt="" />
+            <div>
+              <p>Ставрополь ул. Доваторцев, 21</p>
+              <a href="#">Выбрать город</a>
+            </div>
+          </div>
+          <a href="#" class="user">
+            <img src="/images/icons/user_icon.png" alt="" />
+          </a>
+          <div class="head__top-phone">
+            <a href="#"><img src="/images/icons/phone.png" alt="" /></a>
+            <div>
+              <a href="tel:99989">8 (962) 495-55-54</a>
+              <a href="#">Заказать звонок</a>
+            </div>
+          </div>
+          <label for="check-bar" class="bar">
+            <img src="/images/icons/bar.png" alt="" />
+          </label>
+        </div>
+        <input type="checkbox" id="check-bar" />
+        <label for="check-bar" class="close-btn">&#10005;</label>
+        <ul class="head__menu">
+          <li class="head__menu-item">
+            <a href="#">
+              автомобилей <small>&#10095;</small>
+              <div class="options">
+                <a href="../index.html">Новые авто</a>
+                <a href="#">Авто с пробегом</a>
+              </div>
+            </a>
+          </li>
+          <li class="head__menu-item">
+            <a href="#">
+              Варианты покупки <small>&#10095;</small>
+              <div class="options">
+                <a href="#">Аренда с выкупом</a>
+                <a href="#">Рассрочка</a>
+                <a href="#">Наличные</a>
+                <a href="#">В кредит</a>
+              </div>
+            </a>
+          </li>
+          <li class="head__menu-item">
+            <a href="./duplicates.html"> Дубликаты госномеров </a>
+          </li>
+          <li class="head__menu-item">
+            <a href="#"> Истории выкупа </a>
+          </li>
+          <li class="head__menu-item">
+            <a href="#">
+              О компании <small>&#10095;</small>
+              <div class="options">
+                <a href="#">Вакансии</a>
+                <a href="#">Команда </a>
+                <a href="#">Новости</a>
+              </div>
+            </a>
+          </li>
+          <li class="head__menu-item">
+            <a href="#"> Контакты </a>
+          </li>
+          <li class="head__menu-item">
+            <a href="personal.html">
+              <img src="/images/icons/user_icon.png" alt="" /> Личный кабинет
+            </a>
+          </li>
+          <li class="head__menu-item">
+            <div class="head__top-location">
+              <img src="/images/icons/location.png" alt="" />
+              <div>
+                <p>Ставрополь ул. Доваторцев, 21</p>
+                <a href="#">Выбрать город</a>
+              </div>
+            </div>
+          </li>
+          <li class="head__menu-item">
+            <div class="head__top-phone">
+              <a href="#"><img src="/images/icons/phone.png" alt="" /></a>
+              <div>
+                <a href="tel:99989">8 (962) 495-55-54</a>
+                <a href="#">Заказать звонок</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="rent">
+      <div class="container">
+        <p><span>Главная </span>-Аренда автомобиля с выкупом</p>
+        <div class="rent__banner">
+          <h2>
+            Аренда автомобиля с выкупом <br /> 
+            в СКФО от 530 ₽/сутки
+          </h2>
+          <div>
+            <p>
+              Автомобиль в собственности меньше, чем за год 11 месяцев средний
+              срок выкупа в «Бери Рули»
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="convenient rent-convenient">
+      <div class="container">
+        <h4 class="convenient__title">
+          Выкупать автомобиль с нами
+          <span>удобно, быстро и выгодно </span>
+        </h4>
+        <p class="rent-con-dsc">
+          В отличии от кредита в банке аренда автомобиля с выкупом в компании
+          «Бери Рули» не требует справки с места работы, занимает гораздо меньше
+          вашего времени и дается на выгодных и понятных условиях
+        </p>
+        <div class="convenient__list">
+          <div class="convenient__list-item">
+            <p>Нет фиксированной суммы взноса</p>
+            <p>
+              Чтобы быстрее выкупить автомобиль — просто напишите об этом
+              менеджеру
+            </p>
+          </div>
+          <div class="convenient__list-item">
+            <p>Возвращаем деньги</p>
+            <p>За не выкупленный автомобиль</p>
+          </div>
+          <div class="convenient__list-item">
+            <p>Сами выбираете сумму для выплат</p>
+            <p>От 18 000 тысяч в месяц</p>
+          </div>
+          <div class="convenient__list-item">
+            <p>10 дней отсрочка платежа</p>
+            <p>Успеете поправить свои дела и внести платеж</p>
+          </div>
+          <div class="convenient__list-item">
+            <p>Дарим страховку ОСАГО на один год</p>
+            <p>Дарим страховку ОСАГО на один год</p>
+          </div>
+          <div class="convenient__list-item">
+            <p>Скидка 20% на выкуп</p>
+            <p>Всех последующих автомобилей</p>
+          </div>
+          <div class="convenient__list-item">
+            <p>Дарим страховку ОСАГО на один год</p>
+            <p>Дарим страховку ОСАГО на один год</p>
+          </div>
+          <div class="convenient__list-item">
+            <p>Скидка 20% на выкуп</p>
+            <p>Всех последующих автомобилей</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="buy-now">
+     <div class="container">
+      <img src="/images/bg-car.png" alt="">
+      <h3 class="buy-now__title">
+        <span>Сразу зарабатывайте на новом автомобиле</span> и платите
+        ежемесячные взносы с зарплаты
+      </h3>
+      <p class="buy-now__dsc">Взяв автомобиль в аренду с выкупом и зарабатывая на нем, 
+        через 10-12 месяцев вы сможете выкупить его, и он перейдет в вашу 
+        собственность! Некоторые наши клиенты выкупают автомобиль быстрее, чем за 5 месяцев*</p>
+        <h4 class="buy-now__headline">Где можно работать на собственном автомобиле:</h4>
+        <p class="buy-now__text">*Данные о доходах взяты у наших клиентов, которые сейчас работают и выкупают автомобиль</p>
+        <div class="buy-now__box">
+          <div class="buy-now__box-item">
+            <p>Такси</p>
+            <p>от 27 000 ₽/месяц*</p>
+          </div>
+          <div class="buy-now__box-item">
+            <p>Такси</p>
+            <p>от 27 000 ₽/месяц*</p>
+          </div>
+          <div class="buy-now__box-item">
+            <p>Такси</p>
+            <p>от 27 000 ₽/месяц*</p>
+          </div>
+          <div class="buy-now__box-item">
+            <p>Такси</p>
+            <p>от 27 000 ₽/месяц*</p>
+          </div>
+          <div class="buy-now__box-item">
+            <p>Такси</p>
+            <p>от 27 000 ₽/месяц*</p>
+          </div>
+        </div>
+     </div>
+    </div>
+    <div class="ransom">
+      <div class="container">
+        <div>
+          <h2 class="ransom__title">Каталог автомобилей в аренду 
+            с выкупом в Ставрополе <br> <span>Кому подходит аренда в “Бери Рули”</span></h2>
+            <p class="ransom__subtitle">Рассказывает наш менеджер Илья</p>
+        </div>  
+        <div>
+          <video muted controls poster="/images/saler.png" src="/media/ONIX HAQIDA SIZ KUTGAN MALUMOTLAR VA QACHON CHIQISHI NARXI QANCHA BOLISH.GM UZAVTO MOTORS ONIX [TubeRipper.com].webm"></video>
+        </div>
+      </div>
+    </div>
+    <div class="banner1">
+      <div class="container">
+      <div class="banner1__box">
+        <div>
+          <p><span>Полная комплектация сигнализация,</span> сезонная резина, стеклоподъёмниками и автомагнитолой
+          </p>
+          <p><span>Отличное техническое состояние каждого</span> автомобиля подтверждено службой качества «Бери Рули»</p>
+          <p><span>Только реальный пробег.</span> Средний пробег — 60 000 км</p>
+        </div>
+        <div>
+          <p>Модели <span>не старше 2–7 лет</span>
+            </p>
+            <p><span>Вам нужно приобрести несколько</span> автомобилей на выгодных условиях</p>
+        </div>
+      </div>
+      </div>
+    </div>
+    <section class="catalog">
+      <div class="container catalog-top">
+        <h3 class="catalog-top__title">Каталог автомобилей с пробегом</h3>
+        <button class="catalog-top__btn">Смотреть весь каталог</button>
+      </div>
+      <div class="uk-position-relative  uk-light" tabindex="-1" uk-slider>
+        <ul class="uk-slider-items uk-child-width-1-2 uk-grid container cars-list">
+            <li class="cars-list__item">
+                <div class="uk-panel">
+                    <img src="../images/car1.jpg" width="400" height="600" alt="">
+                    <button class="car-btn1">VIN-номера проверены</button>
+                    <button class="car-btn2">VIN-номера проверены</button>
+                </div>
+                <div class="cars-list__texts">
+                  <p class="run">Без пробега</p>
+                  <h4>Ваз (Lada) Гранта седан Comfort 16 КЛ</h4>
+                  <p>Год выпуска 2021</p>
+                  <p>Аренда с выкупом <span>1 300 руб/сутки</span></p>
+                  <p>Рассрочка  <span>1 200 руб/сутки</span></p>
+                  <p>Наличные <span>1 100 руб/сутки</span></p>
+                </div>
+                <button class="cars-list__item-btn">Полные характеристики</button>
+            </li>
+            <li class="cars-list__item">
+                <div class="uk-panel">
+                    <img src="../images/car2.jpg" width="400" height="600" alt="">
+                    <button class="car-btn1">VIN-номера проверены</button>
+                    <button class="car-btn2">VIN-номера проверены</button>
+                    <button class="coming">Скоро в продаже</button>
+                    <div class="uk-position-center uk-panel"></div>
+                </div>
+                <div class="cars-list__texts">
+                  <p class="run">Без пробега</p>
+                  <h4>Ваз (Lada) Гранта седан Comfort 16 КЛ</h4>
+                  <p>Год выпуска 2021</p>
+                  <p>Аренда с выкупом <span>1 300 руб/сутки</span></p>
+                  <p>Рассрочка  <span>1 200 руб/сутки</span></p>
+                  <p>Наличные <span>1 100 руб/сутки</span></p>
+                </div>
+                <button class="cars-list__item-btn">Полные характеристики</button>
+            </li>
+            <li class="cars-list__item">
+                <div class="uk-panel">
+                    <img src="../images/car3.jpg" width="400" height="600" alt="">
+                    <button class="car-btn1">VIN-номера проверены</button>
+                    <button class="car-btn2">VIN-номера проверены</button>
+                    <div class="uk-position-center uk-panel"></div>
+                </div>
+                <div class="cars-list__texts">
+                  <p class="run">Без пробега</p>
+                  <h4>Ваз (Lada) Гранта седан Comfort 16 КЛ</h4>
+                  <p>Год выпуска 2021</p>
+                  <p>Аренда с выкупом <span>1 300 руб/сутки</span></p>
+                  <p>Рассрочка  <span>1 200 руб/сутки</span></p>
+                  <p>Наличные <span>1 100 руб/сутки</span></p>
+                </div>
+                <button class="cars-list__item-btn">Полные характеристики</button>
+            </li>
+        </ul>
+      </div>  
+      <button class="catalog-button">Смотреть весь каталог</button>
+    </section>
+    <div class="contact contact2">
+      <div class="container">
+        <div class="contact__left"> 
+          <h3 class="contact__left-title"><span>Хотите автомобиль, </span><br>которого нет в каталоге или он уже продан?</h3>
+          <p class="contact__left-dsc">Позвоните менеджеру — попробуем найти
+            эту или похожую модель автомобиля специально для вас. <br>
+            <br><br>
+            Если не найдем сейчас — внесем вас 
+              в базу и сообщим, как только что-то похожее появится в продаже.</p>
+            
+        </div>
+        <div class="contact__right">
+          <form action method="post">
+            <input type="text" placeholder="Ваше имя">
+            <input type="phone" placeholder="Номер телефона">
+            <input type="text" placeholder="Марка автомобиля или другая информация">
+            <div>
+             <label for="#"> <input type="checkbox"> Согласие на обработку персональных данных</label>
+             <button class="contact-btn">Задать вопрос</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="steps">
+      <div class="container">
+        <h3 class="steps__title">Получить автомобиль легко 
+       <br>  <span> всего 4 шага и 30 минут времени</span></h3>
+       <p class="steps__subtitle">Срок выкупа — от 3 месяцев до 2 лет</p>
+       <div class="steps__list">
+        <div class="steps__list-item">
+          <div class="step">
+            <h4 class="step1">Шаг</h4>
+          </div>
+          <p><strong>Выбирайте</strong> автомобиль на сайте
+            или сразу приезжайте в наш офис.
+            Уточнить время можно по телефону
+          <br> <br>
+        <span>8 800 456</span></p>
+        </div>
+        <div class="steps__list-item">
+          <div class="step">
+            <h4 class="step2">Шаг</h4>
+          </div>
+          <p><strong>Выбирайте</strong> автомобиль на сайте
+            или сразу приезжайте в наш офис.
+            Уточнить время можно по телефону</p>
+        </div>
+        <div class="steps__list-item">
+          <div class="step">
+            <h4 class="step3">Шаг</h4>
+          </div>
+          <p><strong>Выбирайте</strong> автомобиль на сайте
+            или сразу приезжайте в наш офис.
+            Уточнить время можно по телефону</p>
+        </div>
+        <div class="steps__list-item">
+          <div class="step">
+            <h4 class="step4">Шаг</h4>
+          </div>
+          <p><strong>Выбирайте</strong> автомобиль на сайте
+            или сразу приезжайте в наш офис.
+            Уточнить время можно по телефону</p>
+        </div>
+       </div>
+       <button class="steps__btn">Заказать звонок</button>
+      </div>
+    </div>
+    <div class="next">
+      <img src="/images/question.png" alt="">
+      <div class="container">
+        <h2 class="next__title">А что потом?</h2>
+        <div class="next__box">
+          <div class="next__box-item">
+            <p><span>Вносите</span> регулярный платеж каждый месяц. 
+              Платеж включает сумму аренды. Сами выбираете сумму для выплат.
+               В среднем это от 18 000 тысяч в месяц</p>
+          </div>
+          <div class="next__box-item">
+            <p><span>Вносите</span> регулярный платеж каждый месяц. 
+              Платеж включает сумму аренды. Сами выбираете сумму для выплат.
+               В среднем это от 18 000 тысяч в месяц</p>
+          </div>
+          <div class="next__box-item">
+            <p><span>Вносите</span> регулярный платеж каждый месяц. 
+              Платеж включает сумму аренды. Сами выбираете сумму для выплат.
+               В среднем это от 18 000 тысяч в месяц</p>
+          </div>
+          <div class="next__box-item">
+            <p><span>Вносите</span> регулярный платеж каждый месяц. 
+              Платеж включает сумму аренды. Сами выбираете сумму для выплат.
+               В среднем это от 18 000 тысяч в месяц</p>
+          </div>
+          <div class="next__box-item">
+            <p><span>Вносите</span> регулярный платеж каждый месяц. 
+              Платеж включает сумму аренды. Сами выбираете сумму для выплат.
+               В среднем это от 18 000 тысяч в месяц</p>
+          </div>
+          <div class="next__box-item">
+            <p><span>Вносите</span> регулярный платеж каждый месяц. 
+              Платеж включает сумму аренды. Сами выбираете сумму для выплат.
+               В среднем это от 18 000 тысяч в месяц</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="buyback">
+      <div class="container">
+        <h2 class="buyback__title"><span>852 успешные истории</span>
+          выкупа автомобиля</h2>
+          <div uk-slideshow="animation: push">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 7:4;">
+  
+              <ul class="uk-slideshow-items">
+                  <li class="slider-vdio">
+                    <video width="50%" height="100%" muted controls  src="/media/ONIX HAQIDA SIZ KUTGAN MALUMOTLAR VA QACHON CHIQISHI NARXI QANCHA BOLISH.GM UZAVTO MOTORS ONIX [TubeRipper.com].webm"></video>
+                    <div class="slider-text">
+                      <p class="slider-name">Алексей</p>
+                      <p>Город: Пятигорск</p>
+                      <p>Автомобиль: <strong>Ваз (Lada) Гранта седан Comfort</strong></p>
+                      <p>Время выруска: <span>5 месяцев</span></p>
+                      <p>Менеджер: <strong>Алина</strong></p>
+                      <p>История клиента: <strong>Почему взяли автомобиль? Почему выбрали Бери Рули?</strong></p>
+                      <p><strong>Отзыв:</strong> Знаю о бери рули уже не первый год, но никогда раньше лично не обращался . Захотел подработать, нужна была машина. Обратился, взял без проблем. Именно ту, которую хотел, еще и на газу Знаю о бери рули уже не первый год, 
+                      </p>
+                    </div>
+                  </li>
+                  <li class="slider-vdio">
+                    <video width="50%" height="100%" muted controls  src="/media/ONIX HAQIDA SIZ KUTGAN MALUMOTLAR VA QACHON CHIQISHI NARXI QANCHA BOLISH.GM UZAVTO MOTORS ONIX [TubeRipper.com].webm"></video>
+                    <div class="slider-text">
+                      <p class="slider-name">Алексей</p>
+                      <p>Город: Пятигорск</p>
+                      <p>Автомобиль: <strong>Ваз (Lada) Гранта седан Comfort</strong></p>
+                      <p>Время выруска: <span>5 месяцев</span></p>
+                      <p>Менеджер: <strong>Алина</strong></p>
+                      <p>История клиента: <strong>Почему взяли автомобиль? Почему выбрали Бери Рули?</strong></p>
+                      <p><strong>Отзыв:</strong> Знаю о бери рули уже не первый год, но никогда раньше лично не обращался . Захотел подработать, нужна была машина. Обратился, взял без проблем. Именно ту, которую хотел, еще и на газу Знаю о бери рули уже не первый год, 
+                      </p>
+                    </div>
+                  </li>
+                  <li class="slider-vdio">
+                    <video width="50%" height="100%" muted controls  src="/media/ONIX HAQIDA SIZ KUTGAN MALUMOTLAR VA QACHON CHIQISHI NARXI QANCHA BOLISH.GM UZAVTO MOTORS ONIX [TubeRipper.com].webm"></video>
+                    <div class="slider-text">
+                      <p class="slider-name">Алексей</p>
+                      <p>Город: Пятигорск</p>
+                      <p>Автомобиль: <strong>Ваз (Lada) Гранта седан Comfort</strong></p>
+                      <p>Время выруска: <span>5 месяцев</span></p>
+                      <p>Менеджер: <strong>Алина</strong></p>
+                      <p>История клиента: <strong>Почему взяли автомобиль? Почему выбрали Бери Рули?</strong></p>
+                      <p><strong>Отзыв:</strong> Знаю о бери рули уже не первый год, но никогда раньше лично не обращался . Захотел подработать, нужна была машина. Обратился, взял без проблем. Именно ту, которую хотел, еще и на газу Знаю о бери рули уже не первый год, 
+                      </p>
+                    </div>
+                  </li>
+              </ul>
+              <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+              <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            </div>
+            <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+          </div>
+      </div>
+    </div>
+    <div class="banner4 container">
+      <h3 class="banner4__title">Условия аренды с выкупом «Бери Рули»</h3>
+      <div class="banner4__box">
+        <img src="/images/hand.png" alt="">
+        <p>Самые честные, прозрачные
+          и выгодные условия
+          по отзывам наших клиентов</p>
+          <p>Мы не предлагаем узнать условия только у
+             менеджеров по телефону, как это делают 
+             недобросовестные компании. Открыто размещаем 
+             <span>все условия на сайте и подробно рассказываем
+              о них на видео. Мы уверены, </span>
+            что наше предложение действительно честное и 
+            выгодное. Это видно сразу — нам нечего скрывать.</p>
+      </div>
+    </div>
+    <div class="conditions container">
+      <h3 class="conditions__title">
+        Для понимания условий работы компании мы даем вам простой <span>пример с условиями выкупа атомобиля в Бери Рули</span>
+      </h3>
+      <h4 class="conditions__headline">Условия Бери Рули</h4>
+      <p class="conditions__dsc">Представьте, что вы приобретаете авто Лада Гранта
+        Рыночная стоимость автомобиля Лада Гранта от 300 000 рублей на поддержанный авто</p>
+       <div class="conditions__list">
+        <p class="conditions__list-item">Первый платеж от 630 рублей сутки (от 19 000 в месяц): 315 рублей в день за аренду, 315 рублей из них идут в формирование капитала на выкуп авто</p>
+        <p class="conditions__list-item">Средний срок выкупа подобного авто - 15 месяцев</p> 
+        <p class="conditions__list-item">Увеличивая свой ежемесячный платеж всего на 70 рублей в сутки, вы выкупаете автомобиль за 14 месяцев</p>
+        <p class="conditions__list-item">У нас нет ограничений по увеличению суммы ежемесячного платежа, следовательно вы можете стать владельцем авто очень быстро</p>
+      </div>
+      <h4 class="conditions__headline">Условия Бери Рули</h4>
+      <div class="conditions__list">
+        <p class="conditions__list-item">Первый платеж от 800 рублей в сутки (от 24 000 в месяц)
+        </p>
+        <p class="conditions__list-item">При среднем сроке выкупа от 15 месяцев
+          </p> 
+        <p class="conditions__list-item">Часто банки ограничивают вас в условиях сокращения срока платежа</p>
+      </div>
+    </div>
+    <div class="options-list container" style="overflow-x:auto">
+      <table class="table-list">
+        <thead>
+          <tr class="t-header">
+            <th></th>
+            <th>Кредит на автомобиль в банке</th>
+            <th>Аренда и выкуп у частника</th>
+            <th>Аренда и выкуп с Бери Рули</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="t-odd">
+            <th>Документы</th>
+            <td>Много документов и справок.
+               Не сможете получить кредит без 
+               справок о доходах. Много документов и
+                справок. Не сможете получить кредит
+                 без справок о доходах.
+             </td>
+             <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+             <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+          </tr>
+          <tr class="t-even">
+            <th>Гарантии</th>
+            <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+            <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+            <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+          </tr>
+          <tr class="t-odd">
+            <th>Документы</th>
+            <td>Много документов и справок.
+               Не сможете получить кредит без 
+               справок о доходах. Много документов и
+                справок. Не сможете получить кредит
+                 без справок о доходах.
+             </td>
+             <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+             <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+          </tr>
+          <tr class="t-even">
+            <th>Гарантии</th>
+            <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+            <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+            <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+          </tr>
+          <tr class="t-odd">
+            <th>Документы</th>
+            <td>Много документов и справок.
+               Не сможете получить кредит без 
+               справок о доходах. Много документов и
+                справок. Не сможете получить кредит
+                 без справок о доходах.
+             </td>
+             <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+             <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+          </tr>
+          <tr class="t-even">
+            <th>Гарантии</th>
+            <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+            <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+            <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+          </tr>
+          <tr class="t-odd">
+            <th>Документы</th>
+            <td>Много документов и справок.
+               Не сможете получить кредит без 
+               справок о доходах. Много документов и
+                справок. Не сможете получить кредит
+                 без справок о доходах.
+             </td>
+             <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+             <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+          </tr>
+          <tr class="t-even">
+            <th>Гарантии</th>
+            <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+            <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+            <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+          </tr>
+          <tr class="t-odd">
+            <th>Документы</th>
+            <td>Много документов и справок.
+               Не сможете получить кредит без 
+               справок о доходах. Много документов и
+                справок. Не сможете получить кредит
+                 без справок о доходах.
+             </td>
+             <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+             <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+          </tr>
+          <tr class="t-even">
+            <th>Гарантии</th>
+            <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+            <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+            <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+          </tr>
+          <tr class="t-odd">
+            <th>Документы</th>
+            <td>Много документов и справок.
+               Не сможете получить кредит без 
+               справок о доходах. Много документов и
+                справок. Не сможете получить кредит
+                 без справок о доходах.
+             </td>
+             <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+             <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+          </tr>
+          <tr class="t-even">
+            <th>Гарантии</th>
+            <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+            <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+            <td>Много документов и справок. Не сможете получить кредит без справок о доходах</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="banner5 container">
+      <div class="banner5__item">
+        <p class="banner5__item-headline"> Выбор автомобиля и первый взнос</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Aenean euismod bibendum laoreet. Proin gravida 
+          dolor sit amet lacus accumsan et viverra justo
+
+          commodo. Proin sodales pulvinar tempor. 
+          Cum sociis natoque penatibus et magnis dis
+           parturient montes, nascetur ridiculus mus. 
+          Nam fermentum, nulla luctus pharetra vulputate, 
+          felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+      </div>
+      <div class="banner5__item">
+        <p class="banner5__item-headline"> Выбор автомобиля и первый взнос</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Aenean euismod bibendum laoreet. Proin gravida 
+          dolor sit amet lacus accumsan et viverra justo
+
+          commodo. Proin sodales pulvinar tempor. 
+          Cum sociis natoque penatibus et magnis dis
+           parturient montes, nascetur ridiculus mus. 
+          Nam fermentum, nulla luctus pharetra vulputate, 
+          felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+      </div>
+    </div>
+    <div class="ransom">
+      <div class="container">
+        <div>
+          <h2 class="ransom__title">Как рассчитывается платеж?</h2>
+            <p class="ransom__subtitle">Рассказывает наш менеджер Игорь.
+              Если у вас остались вопросы после видео, звоните
+              или приезжайте в наш офис</p>
+            <button class="ransom__btn">Перезвоните мне</button>
+        </div>  
+        <div>
+          <video muted controls poster="/images/saler.png" src="/media/ONIX HAQIDA SIZ KUTGAN MALUMOTLAR VA QACHON CHIQISHI NARXI QANCHA BOLISH.GM UZAVTO MOTORS ONIX [TubeRipper.com].webm"></video>
+        </div>
+      </div>
+    </div>
+    <div class="banner5 container b5-second">
+      <div class="banner5__item">
+        <p class="banner5__item-headline"> Как проходят регулярные выплаты?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Aenean euismod bibendum laoreet. Proin gravida dolor sit 
+          amet lacus accumsan et viverra justo
+          commodo. Proin sodales pulvinar tempor. Cum sociis natoqu
+          e penatibus et magnis dis parturient montes, nascetur ridiculus 
+          mus. Nam fermentum, nulla luctus pharetra vulputate, 
+          felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+      </div>
+    </div>
+    <div class="payment container">
+      <div class="payment__img">
+        <img src="/images/phone.png" alt="">
+      </div>
+      <div class="payment__text">
+        <h4>Как проходят регулярные выплаты?</h4>
+        <p>Мы постоянно улучшаем наш сервис, добавляем новые удобные услуги.
+          В 2017 году мы сделали большой шаг — разработали собственную систему,
+           где <span>каждый клиент может просмотреть историю платежей.
+            Вход в личный кабинет доступен в любое время и из </span>
+            любого места — достаточно иметь под рукой телефон и интернет. <br><br>
+          
+          В сервисе вся информация обновляется автоматически.
+          В личном кабинете есть функция напоминания о платеже, которая поможет не забыть о платеже.</p>
+      </div>
+    </div>
+    <div class="banner5 container">
+      <div class="only">
+        Только у нас
+      </div>
+      <div class="banner5__item">
+        <p class="banner5__item-headline"> Бонусная программа и скидки «Бери Рули Премиум»</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Aenean euismod bibendum laoreet. Proin gravida 
+          dolor sit amet lacus accumsan et viverra justo
+
+          commodo. Proin sodales pulvinar tempor. 
+          Cum sociis natoque penatibus et magnis dis
+           parturient montes, nascetur ridiculus mus. 
+          Nam fermentum, nulla luctus pharetra vulputate, 
+          felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+      </div>
+      <div class="banner5__item">
+        <p class="banner5__item-headline"> Выкуп и переоформление автомобиля</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Aenean euismod bibendum laoreet. Proin gravida 
+          dolor sit amet lacus accumsan et viverra justo
+
+          commodo. Proin sodales pulvinar tempor. 
+          Cum sociis natoque penatibus et magnis dis
+           parturient montes, nascetur ridiculus mus. 
+          Nam fermentum, nulla luctus pharetra vulputate, 
+          felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+      </div>
+    </div>
+    <div class="team">
+      <div class="container">
+        <h3 class="team__title">Наша команда</h3>
+      <p class="team__dsc">У нас работает целая команда опытных менеджеров, к которым вы можете обратиться по любому вопросу
+        — от выбора машины до совета по работе на автомобиле. Мы долго собирали нашу команду и очень ей гордимся.
+        Многие менеджеры сами выкупали машину в «Бери Рули», поэтому знают все нюансы выкупа и оформления автомобиля.
+        </p>
+        <p class="team__text">Ждем ваших звоноков с 9:00 до 20:00 в любой день.</p>
+        <div class="team__members">
+          <div class="team__members-item">
+            <div>
+              <img src="/images/m1.png" alt="">
+            </div>
+            <h4>Константин</h4>
+            <p>Менеджер по работе с клиентами
+            </p>
+          </div>
+          <div class="team__members-item">
+            <div>
+              <img src="/images/m2.png" alt="">
+            </div>
+            <h4>Константин</h4>
+            <p>Менеджер по работе с клиентами
+            </p>
+          </div>
+          <div class="team__members-item">
+            <div>
+              <img src="/images/m3.png" alt="">
+            </div>
+            <h4>Константин</h4>
+            <p>Менеджер по работе с клиентами
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="container">
+        <div class="contact__left">
+          <h3 class="contact__left-title">Остались вопросы? <br><span>Свяжитесь с нами</span></h3>
+          <p class="contact__left-dsc">Если вы столкнулись с трудностями при
+            работе с Бери Рули, у Вас есть какие-то замечания или предложения — позвоните. <br>
+            <span>Прием звонков с 09:00 до 18:00</span></p>
+            <a href="tel:998912931771">+7 (962) 495 55 54</a>
+        </div>
+        <div class="contact__right">
+          <form action method="post">
+            <input type="text" placeholder="Ваше имя">
+            <input type="phone" placeholder="Номер телефона">
+            <input type="text" placeholder="Ваш вопрос">
+            <div>
+             <label for="#"> <input type="checkbox"> Согласие на обработку персональных данных</label>
+             <button class="contact-btn">Задать вопрос</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-top container">
+        <div class="footer-top__item">
+          <p><a href="#">Ставрополь:</a> ул. Доваторцев, 21</p>
+          <p>Главный офис: <a href="#">г. Пятигорск ул.Бунимовича д.38</a></p>
+          <p>График работы:<a href="#">Пн-Сб с 9:00 до 18:00</a></p>
+          <p>E-mail:<a href="#">avto@beri-ruli.ru</a></p>
+          <a href="tel:912931771">+7 (962) 495 55 54</a>
+        </div>
+        <div class="footer-top__item">
+          <p><a href="#">О “Бери рули”</a></p>
+          <a href="#">Команда</a>
+          <a href="#">Вакансии</a>
+          <a href="#">Новости</a>
+          <p><a href="#">Акции и спецпредложения</a></p>
+        </div>
+        <div class="footer-top__item">
+          <a href="#">Каталог авто </a>
+          <a href="#">Аренда с выкупом </a>
+          <a href="#">Истории выкупа </a>
+          <a href="#"> Дубликаты гос.номеров </a>
+          <a href="#">Контакты</a>
+        </div>
+      </div>
+      <div class="footer-middle container">
+        <div class="footer-middle__socials">
+          <a href="#"><img src="/images/icons/instagram.png" alt="" /></a>
+          <a href="#"><img src="/images/icons/wk.png" alt="" /></a>
+          <a href="#"><img src="/images/icons/telegram.png" alt="" /></a>
+          <a href="#"><img src="/images/icons/vk.png" alt="" /></a>
+        </div>
+        <p><a href="#">Пользовательское соглашение </a></p>
+        <p><a href="#">Пользовательское соглашение </a></p>
+        <p><a href="#">Реквизиты компании </a></p>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2010-2021 ООО «Бери Рули»</p>
+          <p>Разработка сайта <a>WEBELEMENT</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

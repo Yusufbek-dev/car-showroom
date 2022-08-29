@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <script
+      src="https://kit.fontawesome.com/cb3b11f165.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- uikit links -->
+    <link rel="stylesheet" href="../css/uikit.min.css" />
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div uk-alert class="alert">
+        <button class="uk-alert-close" type="button" uk-close></button>
+        <p>
+          Спецпредложение: купи авто по цене и получи дубликаты госномеров в
+          подарок!
+        </p>
+      </div>
+      <div class="head container">
+        <div class="head__top">
+          <div class="head__top-logo">
+            <img src="/images/logo.png" alt="logo" />
+            <div>
+              <h4>
+                Аренда автомобилей <br />
+                с выкупом №1 на Юге России
+              </h4>
+              <span>Выгодные и честные условия </span>
+            </div>
+          </div>
+          <div class="head__top-location">
+            <img src="/images/icons/location.png" alt="" />
+            <div>
+              <p>Ставрополь ул. Доваторцев, 21</p>
+              <a href="#">Выбрать город</a>
+            </div>
+          </div>
+          <a href="#" class="user">
+            <img src="/images/icons/user_icon.png" alt="" />
+          </a>
+          <div class="head__top-phone">
+            <a href="#"><img src="/images/icons/phone.png" alt="" /></a>
+            <div>
+              <a href="tel:99989">8 (962) 495-55-54</a>
+              <a href="#">Заказать звонок</a>
+            </div>
+          </div>
+          <label for="check-bar" class="bar">
+            <img src="/images/icons/bar.png" alt="" />
+          </label>
+        </div>
+        <input type="checkbox" id="check-bar" />
+        <label for="check-bar" class="close-btn">&#10005;</label>
+        <ul class="head__menu">
+          <li class="head__menu-item">
+            <a href="#">
+              автомобилей <small>&#10095;</small>
+              <div class="options">
+                <a href="../index.html">Новые авто</a>
+                <a href="#">Авто с пробегом</a>
+              </div>
+            </a>
+          </li>
+          <li class="head__menu-item">
+            <a href="#">
+              Варианты покупки <small>&#10095;</small>
+              <div class="options">
+                <a href="#">Аренда с выкупом</a>
+                <a href="#">Рассрочка</a>
+                <a href="#">Наличные</a>
+                <a href="#">В кредит</a>
+              </div>
+            </a>
+          </li>
+          <li class="head__menu-item">
+            <a href="./duplicates.html"> Дубликаты госномеров </a>
+          </li>
+          <li class="head__menu-item">
+            <a href="#"> Истории выкупа </a>
+          </li>
+          <li class="head__menu-item">
+            <a href="#">
+              О компании <small>&#10095;</small>
+              <div class="options">
+                <a href="#">Вакансии</a>
+                <a href="#">Команда </a>
+                <a href="#">Новости</a>
+              </div>
+            </a>
+          </li>
+          <li class="head__menu-item">
+            <a href="#"> Контакты </a>
+          </li>
+          <li class="head__menu-item">
+            <a href="#">
+              <img src="/images/icons/user_icon.png" alt="" /> Личный кабинет
+            </a>
+          </li>
+          <li class="head__menu-item">
+            <div class="head__top-location">
+              <img src="/images/icons/location.png" alt="" />
+              <div>
+                <p>Ставрополь ул. Доваторцев, 21</p>
+                <a href="#">Выбрать город</a>
+              </div>
+            </div>
+          </li>
+          <li class="head__menu-item">
+            <div class="head__top-phone">
+              <a href="#"><img src="/images/icons/phone.png" alt="" /></a>
+              <div>
+                <a href="tel:99989">8 (962) 495-55-54</a>
+                <a href="#">Заказать звонок</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="form">
+      <h3 class="form__title">Вход в личный кабинет</h3>
+      <p class="form__dsc">Доступ в личный кабинет с историей платежей и прогрессом выплат</p>
+      <form action >
+        <input type="number" placeholder="Введите номер договора">
+        <input type="number" placeholder="Введите клиентский код">
+        <input type="submit" class="form__btn" value="Войти" />
+      </form>
+    </div>
+    <div class="contact">
+      <div class="container">
+        <div class="contact__left">
+          <h3 class="contact__left-title">Остались вопросы? <br><span>Свяжитесь с нами</span></h3>
+          <p class="contact__left-dsc">Если вы столкнулись с трудностями при
+            работе с Бери Рули, у Вас есть какие-то замечания или предложения — позвоните. <br>
+            <span>Прием звонков с 09:00 до 18:00</span></p>
+            <a href="tel:998912931771">+7 (962) 495 55 54</a>
+        </div>
+        <div class="contact__right">
+          <form action method="post">
+            <input type="text" placeholder="Ваше имя">
+            <input type="phone" placeholder="Номер телефона">
+            <input type="text" placeholder="Ваш вопрос">
+            <div>
+             <label for="#"> <input type="checkbox"> Согласие на обработку персональных данных</label>
+             <button class="contact-btn">Задать вопрос</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-top container">
+        <div class="footer-top__item">
+          <p><a href="#">Ставрополь:</a> ул. Доваторцев, 21</p>
+          <p>Главный офис: <a href="#">г. Пятигорск ул.Бунимовича д.38</a></p>
+          <p>График работы:<a href="#">Пн-Сб с 9:00 до 18:00</a></p>
+          <p>E-mail:<a href="#">avto@beri-ruli.ru</a></p>
+          <a href="tel:912931771">+7 (962) 495 55 54</a>
+        </div>
+        <div class="footer-top__item">
+          <p><a href="#">О “Бери рули”</a></p>
+          <a href="#">Команда</a>
+          <a href="#">Вакансии</a>
+          <a href="#">Новости</a>
+          <p><a href="#">Акции и спецпредложения</a></p>
+        </div>
+        <div class="footer-top__item">
+          <a href="#">Каталог авто </a>
+          <a href="#">Аренда с выкупом </a>
+          <a href="#">Истории выкупа </a>
+          <a href="#"> Дубликаты гос.номеров </a>
+          <a href="#">Контакты</a>
+        </div>
+      </div>
+      <div class="footer-middle container">
+        <div class="footer-middle__socials">
+          <a href="#"><img src="/images/icons/instagram.png" alt="" /></a>
+          <a href="#"><img src="/images/icons/wk.png" alt="" /></a>
+          <a href="#"><img src="/images/icons/telegram.png" alt="" /></a>
+          <a href="#"><img src="/images/icons/vk.png" alt="" /></a>
+        </div>
+        <p><a href="#">Пользовательское соглашение </a></p>
+        <p><a href="#">Пользовательское соглашение </a></p>
+        <p><a href="#">Реквизиты компании </a></p>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2010-2021 ООО «Бери Рули»</p>
+          <p>Разработка сайта <a>WEBELEMENT</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

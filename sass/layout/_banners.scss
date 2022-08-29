@@ -16,6 +16,9 @@
       row-gap: 20px;
       p {
         position: relative;
+        span {
+          color: $primary-color;
+        }
         &::before {
           content: "";
           left: -35px;
@@ -125,5 +128,214 @@
       align-items: flex-start;
       row-gap: 15px;
     }
+  }
+}
+
+
+// rent.html banners
+
+.rent {
+  padding: 26px 0 75px;
+  &>div {
+    &>p {
+      color: 989898;
+      font-size: .8rem;
+      margin-bottom: 25px;
+    }
+  }
+  &__banner {
+    background:linear-gradient(to right, rgba(0,0,0,.5),rgba(0,0,0,.5)),url(/images/rant-car.jpg) no-repeat 100% 100%;
+    padding: 43px 42px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    h2 {
+      color: #fff;
+    }
+    div {
+      width: 45%;
+      padding: 25px 29px;
+      background-color: $primary-color;
+      p {
+        color: #fff;
+      }
+    }
+  }
+  @include tablet {
+    &__banner {
+      flex-direction: column;
+      row-gap: 30px;
+      &>div {
+        width: 80%;
+      }
+    }
+  }
+  @include mobile {
+    &__banner {
+      padding: 15px 10px;
+      &>div {
+        width: 95%;
+      }
+    }
+  }
+}
+
+// banner4 
+
+.banner4 {
+  padding: 35px 26px 52px 45px; 
+  background-color: #F5F5F9;
+  border: 1px solid #0088CF;
+  border-radius: 5px;
+  &__title {
+    margin-bottom: 34px;
+    span {
+      color: $primary-color;
+    }
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    p {
+      &:first-child {
+        width: 30%;
+      }
+      &:nth-child(2) {
+        width: 60%;
+      }
+      span {
+        color: $primary-color;
+      }
+    }
+  }
+  @include tablet {
+    &__title {
+      text-align: center;
+    }
+    &__box {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
+}
+
+// banner5
+.banner5 {
+  margin-top: 50px;
+  padding: 39px 46px 49px 52px;
+  background-color: #F5F5F9;
+  border: 1px solid #0088CF;
+border-radius: 5px;
+  display: flex;
+  justify-content:space-between;
+  position: relative;
+  .only {
+    position: absolute;
+    top: -15px;
+    left: 58px;
+    padding: 10px 40px;
+    background-color: $primary-color;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+  }
+  &__item {
+    width: 45%;
+    &-headline {
+      font-weight: 700;
+      margin-bottom: 7px;
+      font-size: 1.1rem;
+      position: relative;
+      &::before {
+        content: "";
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: -35px;
+        background: url(/images/icons/checked-icon.png) no-repeat;
+      }
+    }
+    p {
+      font-size: 0.8em;
+    }
+  }
+  @include tablet {
+    flex-direction: column;
+    row-gap: 20px;
+    &__item {
+      width: 100%;
+    }
+
+  }
+}
+.b5-second {
+  .banner5__item {
+    width: 80%;
+  }
+  @include mobile {
+    .banner5__item {
+      margin-left: 35px;
+      width: 80%;
+    }
+    padding: 10px 8px;
+  }
+}
+
+.container {
+  .page-name {
+    color: #989898;
+    font-size: .8rem;
+    margin-top: 26px;
+  }
+}
+.banner6 {
+  margin-top: 25px;
+  background-color: $primary-color;
+  padding: 33px 30px 38px 30px;
+  display: flex;
+  column-gap: 25px;
+  position: relative;
+  img {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+  }
+  a {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    color: #fff;
+  }
+  &__btn {
+    position:relative;
+    z-index: 4;
+    width: 150px;
+    height: 43px!important;
+    padding: 5px 15px!important;
+    border-radius: 5px;
+    background-color: #FCEC4F;
+    border: 1px solid #FCEC4F;
+    color: $text-color;
+    hover {
+      background-color: #FCEC4F;
+      color: #000;
+      opacity: .8;
+    }
+  }
+  &__texts {
+    h3 {
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    p {
+      line-height: 26px;
+      font-size: .8rem;
+      color: #fff;
+    }
+  }
+  @include tablet {
+    flex-direction: column;
+    row-gap: 20px;
   }
 }

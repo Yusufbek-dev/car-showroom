@@ -1,0 +1,65 @@
+@use  "../globals/colors" as *;
+@use  "../globals/mixin" as *;
+
+.buy-now {
+  padding: 81px 0;
+  background-color: #F5F5F9;
+  position: relative;
+  img {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  &__title {
+    margin-bottom: 28px;
+    span {
+      color: $primary-color;
+    }
+  }
+  &__dsc {
+    margin-bottom: 48px;
+    line-height: 27px;
+    width: 70%;
+  }
+  &__headline {
+    margin-bottom: 8px;
+  }
+  &__text {
+    color: #989898;
+    margin-bottom: 40px;
+  }
+  &__box {
+    display: flex;
+    column-gap: 17px;
+    &-item {
+      border: 1px solid $primary-color;
+      background-color:   #fff;
+      padding: 57px 20px;
+      width: 224px;
+      p {
+        text-align:center;
+        &:first-child {
+          font-weight: 900;
+          margin-bottom: 14px;
+        }
+      }
+    }
+  }
+  @include tablet {
+    &__box {
+      flex-wrap: wrap;
+      row-gap: 20px;
+    }
+  }
+  @include mobile {
+    &__box {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      row-gap: 20px;
+      &-item {
+        width: 90%;
+      margin: 0 5%;
+      }
+    }
+  }
+}

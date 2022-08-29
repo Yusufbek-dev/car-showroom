@@ -1,0 +1,65 @@
+@use  "../globals/colors" as *;
+@use  "../globals/mixin" as *;
+
+.details {
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__list {
+    display: flex;
+    column-gap: 40px;
+    &-item {
+      width: 31%;
+      div {
+        display: flex;
+        justify-content:space-between;
+      }
+      &:first-child,
+      &:nth-child(2) {
+        border-right:1px solid #E5E5E5;
+        padding-right: 40px;
+      }
+      display: flex;
+      flex-direction: column;
+      row-gap: 31px;
+      h4 {
+        color: $primary-color;
+      }
+      p {
+        line-height: 27px;
+      }
+      input {
+        width: 150px;
+        padding: 17px 31px;
+        background-color: #F5F5F9;
+        border: 1px solid #0088CF;
+        border-radius: 3px;
+        &::placeholder {
+          color: #989898;
+        }
+      }
+    }
+  }
+  @include tablet {
+    &__list {
+      flex-direction:  column;
+      row-gap: 30px;
+      &-item {
+        justify-content:center;
+        width: 80%;
+        &:first-child,
+        &:nth-child(2) {
+          padding-right: 0;
+          border-right:none;
+        }
+      }
+    }
+  }
+  @include mobile {
+    &__list {
+      &-item {
+        width: 98%;
+      }
+    }
+  }
+}

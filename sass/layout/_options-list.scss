@@ -1,0 +1,68 @@
+@use "../globals/colors" as *;
+@use "../globals/mixin" as *;
+
+.options-list {
+  overflow-x: hidden;
+  .table-list {
+    overflow-x: scroll;
+  }
+  .t-header {
+    background-color: $primary-color;
+    th {
+      padding: 22px 0;
+      text-align: center;
+      width: 25%;
+      color: #fff;
+      font-size: 1rem;
+      @include tablet {
+        min-width: 200px;
+      }
+    }
+  }
+  th,
+  td {
+    border-right: 1px solid border #E5E5E5;;
+  }
+  .t-odd {
+    th {
+      width: 25%;
+      background-color: #F5F5F9;
+      font-size: 1rem;
+      font-weight: 700;
+      padding-left: 15px;
+      @include tablet {
+        min-width: 200px;
+      }
+    }
+    td {
+      padding: 20px;
+      width: 25%;
+      font-size: .8rem;
+      background-color: #F5F5F9;
+      @include tablet {
+        min-width: 200px;
+      }
+    }
+  }
+  .t-even {
+    th {
+      width: 25%;
+      background-color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      padding-left: 15px;
+      @include tablet {
+        min-width: 200px;
+      }
+    }
+    td {
+      padding: 20px;
+      width: 25%;
+      font-size: .8rem;
+      background-color: #fff;
+      @include tablet {
+        min-width: 200px;
+      }
+    }
+  }
+}

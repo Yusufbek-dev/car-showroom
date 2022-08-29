@@ -1,0 +1,76 @@
+@use "../globals/mixin" as *;
+@use "../globals/colors" as *;
+
+.team {
+  padding: 80px 0;
+  &__title {
+    margin-bottom: 22px;
+    font-weight: 900;
+  }
+  &__dsc {
+    font-size: .8rem;
+    width: 60%;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 36px;
+  }
+  &__members {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 65px;
+    align-items: center;
+    &-item {
+      width: 32%;
+      div {
+        background:url(/images/m-bg.png)no-repeat right top;
+        img {
+          min-height: 310px;
+        }
+      }
+      h4 {
+        margin: 35px 0 10px;
+      }
+      p {
+        font-size: .9rem;
+        font-weight: 400;
+      }
+    }
+  }
+  @include tablet {
+    &__title {
+      text-align: center;
+    }
+    &__dsc {
+      width: 100%;
+      text-align: center;
+    }
+    &__text {
+      text-align: center;
+    }
+    &__members {
+      flex-direction: column;
+      row-gap: 20px;
+      &-item {
+        width: 62%;
+      }
+    }
+  }
+  @include mobile {
+    &__members {
+      flex-direction: column;
+      row-gap: 20px;
+      &-item {
+        width: 92%;
+        h4 {
+          text-align:center;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

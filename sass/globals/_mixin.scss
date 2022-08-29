@@ -6,7 +6,7 @@
 }
 
 @mixin center-item {
-  max-lines: -50%;
+  max-lines: 50%;
   transform: translateX(-50%);
 }
 

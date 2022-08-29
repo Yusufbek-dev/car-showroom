@@ -1,0 +1,22 @@
+@use "../globals/colors" as *;
+@use "../globals/mixin" as *;
+
+.bank {
+  padding: 80px 0;
+  &__title {
+    margin-bottom: 40px;
+  }
+}
+.table-head {
+  background-color: $primary-color;
+  th {
+    padding: 17px 23px;
+    color: #fff;
+  }
+}
+
+td {
+  background-color: #E5E5E5;
+  color:$text-color;
+  padding: 17px 23px;
+}

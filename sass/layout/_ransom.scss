@@ -1,0 +1,41 @@
+@use "../globals/colors" as *;
+@use "../globals/mixin" as *;
+
+.ransom {
+  padding: 86px 0 60px;
+  &__btn {
+    margin-top: 15px;
+    @include btn;
+  }
+  &>div {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    div {
+     width: 45%;
+    }
+  }
+  &__title {
+    span {
+      color: $primary-color;
+    }
+    margin-bottom: 22px;
+  }
+  @include tablet {
+    &>div {
+      flex-direction: column;
+      row-gap: 30px;
+      div {
+        width: 80%;
+      }
+    }
+  }
+  @include tablet {
+    padding: 50px 0 35px;
+    &>div {
+      div {
+        width: 95%;
+      }
+    }
+  }
+}

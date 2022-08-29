@@ -1,0 +1,52 @@
+@use  "../globals/colors" as *;
+@use  "../globals/mixin" as *;
+
+.payment {
+  padding: 12px 0 24px;
+  display: flex;
+  column-gap: 40px;
+  align-items: center;
+  &__img {
+    min-width: 450px;
+    min-height: 400px;
+  }
+  &__text {
+    h4 {
+      margin-bottom: 16px; 
+      &::before {
+        content: "";
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: -35px;
+        background: url(/images/icons/checked-icon.png) no-repeat;
+      }
+    }
+    p {
+      width: 60%;
+      font-size: .8rem;
+      span {
+        color:$primary-color;
+      }
+    }
+  }
+  @include tablet {
+    flex-direction: column;
+    row-gap: 30px;
+    &__img {
+      min-width:180px;
+      min-height: 200px;
+      max-width:260px;
+      max-height: 300px;
+    }
+    &__text {
+      h4 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+}

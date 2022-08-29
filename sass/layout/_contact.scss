@@ -95,3 +95,15 @@
     }
   }
 }
+.contact.contact2 {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 100px;
+  &>div {
+    padding: 55px 0;
+    background-color:#F5F5F9;
+  }
+  @include mobile {
+    margin-bottom: 50px;
+  }
+}

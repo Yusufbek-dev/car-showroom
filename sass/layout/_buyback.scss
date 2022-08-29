@@ -1,0 +1,59 @@
+@use "../globals/colors" as *;
+@use "../globals/mixin" as *;
+
+.buyback {
+  padding: 10px 0 60px;
+  &__title {
+    margin-bottom: 35px;
+    span {
+      color: $primary-color;
+    }
+  }
+  .slider-vdio {
+    display: flex;
+    align-items: center;
+    .slider-text {
+      border: 1px solid $primary-color;
+      padding: 32px 45px;
+      width: 45%;
+      .slider-name {
+        font-size: 1.2rem;
+        font-weight: 900;
+        margin-bottom: 4px;
+      }
+      p {
+        span {
+          color: $primary-color;
+        }
+        font-size: .8rem;
+        mix-blend-mode: 5px;
+        &:last-child {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  @include tablet {
+    .slider-vdio {
+      video {
+        width: 100%;
+      }
+      height: 600px;
+      flex-direction: column;
+      row-gap: 15px;
+      .slider-text {
+        width: 80%;
+        p {
+          color: $text-color!important;
+          position: relative;
+          z-index: 9;
+        }
+      }
+    }
+  }
+  @include mobile {
+    &__title {
+      text-align: center;
+    }
+  }
+}

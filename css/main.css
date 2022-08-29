@@ -1607,6 +1607,21 @@ td {
 
 footer {
   padding-top: 70px;
+  position: relative;
+}
+footer .top {
+  z-index: 9;
+  position: absolute;
+  padding: 18px 19px 27px;
+  background-color: #0088CF;
+  border-radius: 5px;
+  transition: 0.3s;
+  bottom: 88px;
+  right: 61px;
+  cursor: pointer;
+}
+footer .top:hover, footer .top:active {
+  opacity: 0.8;
 }
 
 .footer-top {
